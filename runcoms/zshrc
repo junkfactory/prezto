@@ -11,3 +11,21 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+alias ll='ls -lG'
+alias rm='rm -i'
+alias less='less --follow-name'
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_65.jdk/Contents/Home/;
+export ANT_HOME=~/Applications/apache-ant
+export JMETER_HOME=~/Applications/apache-jmeter-2.13
+export ANDROID_SDK_HOME=~/Library/Android/sdk
+
+ANT_OPTS="-Xms1024m -Xmx2048m -XX:MaxPermSize=512m"
+export ANT_OPTS=$ANT_OPTS
+
+#source ~/Applications/bin/git-prompt.sh
+#export PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u@\h\[\033[01;33m\]$(__git_ps1)\[\033[01;33m\]:\n\[\e[33m\]\w\[\e[0m\]\n\$ '
+
+#git
+#. .git-completion
+
+export PATH=$PATH:$ANT_HOME/bin:~/Applications/bin:$JMETER_HOME/bin:$HOME/.rvm/bin
