@@ -121,7 +121,8 @@ prompt_status() {
 prompt_agnoster_main() {
 	RETVAL=$?
 	CURRENT_BG='NONE'
-	prompt_context
+	print -n "\n"
+#prompt_context
 	prompt_status
 	prompt_dir
 	prompt_git
